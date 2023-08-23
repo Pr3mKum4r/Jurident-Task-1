@@ -1,0 +1,22 @@
+.header{
+    padding-left: 7rem;
+    font-size: 4rem;
+}
+.main{
+    background-color: #F3F3F3;
+    margin: auto;
+    width: 80%;
+    padding: 3rem;
+    margin-top:3%;
+}
+.content{
+    justify-content:left;
+    margin: auto;
+}
+.section{
+    display: flex;
+    padding-top: 4rem;
+}
+.image{
+    margin-left: 2rem;
+}
