@@ -59,13 +59,34 @@ button{
     max-width: 50%;
     margin:3px;
 }
-input,select,textarea {
+input[type="text"],select,textarea {
     width:90%;
     height:30px;
     border:none;
     border-bottom: 1px solid black;
     margin:15px;
 }
+input[type="email"]{
+    width:90%;
+    height:30px;
+    border:none;
+    border-bottom: 1px solid black;
+    margin:15px;
+}
+input[type="tele"] {
+    width:90%;
+    height:30px;
+    border:none;
+    border-bottom: 1px solid black;
+    margin:15px;
+}
+.options {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+    
 button{
     background-color: black;
     color:white;
@@ -78,7 +99,7 @@ button{
 
 .right{
     max-width: auto;
-    height: 500px;
+    height: 600px;
     position: relative;
     flex: 1;
     margin:5px;
@@ -125,7 +146,7 @@ img{
         margin-top:200px;  
     }
     .right .social-container .social{
-        margin:10px;
+        max-width: 500px;
     }
     .form-left{
         flex:100%;
@@ -134,5 +155,7 @@ img{
     .form-right{
         flex:100%;
         max-width: 600px;
+        
     }
+
 }
