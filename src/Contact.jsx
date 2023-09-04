@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import { Facebook, Twitter, Instagram } from '@mui/icons-material';
+import { Facebook, Twitter, Instagram } from "@mui/icons-material";
 
 export const Contact = () => {
   const [firstName, setFirstName] = useState("");
@@ -46,6 +46,7 @@ export const Contact = () => {
                     value={firstName}
                     onChange={(e) => setFirstName(e.target.value)}
                     required
+                    placeholder="John"
                   />
                 </div>
                 <div className="form-right">
@@ -56,6 +57,7 @@ export const Contact = () => {
                     value={lastName}
                     onChange={(e) => setLastName(e.target.value)}
                     required
+                    placeholder="Doe"
                   />
                 </div>
               </div>
@@ -69,6 +71,7 @@ export const Contact = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
+                    placeholder="Johndoe1234@gmail.com"
                   />
                 </div>
                 <div className="form-right">
@@ -79,24 +82,60 @@ export const Contact = () => {
                     value={phoneNumber}
                     onChange={(e) => setPhoneNumber(e.target.value)}
                     required
+                    placeholder="+91 1234567890"
                   />
                 </div>
               </div>
 
               <div className="form-row">
-                <label htmlFor="enquiryType">Enquiry Type</label>
-                <select
-                  id="enquiryType"
-                  value={enquiryType}
-                  onChange={(e) => setEnquiryType(e.target.value)}
-                  required
+                <label
+                  style={{ width: "100%", margin: "5px", marginBottom: "10px" }}
                 >
-                  <option value="">Select an option</option>
-                  <option value="General">General</option>
-                  <option value="Support">Support</option>
-                  <option value="Sales">Collabratation</option>
-                </select>
+                  Select Query
+                </label>
+                <div className="options">
+                  <div>
+                    <input
+                      type="radio"
+                      id="enquiryTypeGeneral"
+                      name="enquiryType"
+                      value="General"
+                      checked={enquiryType === "General"}
+                      onChange={() => setEnquiryType("General")}
+                      required
+                    />
+                    <label htmlFor="enquiryTypeGeneral">General</label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="enquiryTypeSupport"
+                      name="enquiryType"
+                      value="Support"
+                      checked={enquiryType === "Support"}
+                      onChange={() => setEnquiryType("Support")}
+                      required
+                    />
+                    <label htmlFor="enquiryTypeSupport">Support</label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="enquiryTypeCollaboration"
+                      name="enquiryType"
+                      value="Collaboration"
+                      checked={enquiryType === "Collaboration"}
+                      onChange={() => setEnquiryType("Collaboration")}
+                      required
+                    />
+                    <label htmlFor="enquiryTypeCollaboration">
+                      Collaboration
+                    </label>
+                  </div>
+                  
+                </div>
               </div>
+
               <div className="form-row">
                 <label htmlFor="message">Message</label>
                 <textarea
@@ -104,10 +143,11 @@ export const Contact = () => {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   required
+                  placeholder="write your message here"
                 />
               </div>
               <div className="form-row">
-              <button type="submit">Send Message</button>
+                <button type="submit">Send Message</button>
               </div>
             </form>
           </div>
@@ -140,16 +180,16 @@ export const Contact = () => {
                   India
                 </p>
               </div>
-              <div className="social-container">  
-              <div className="social">
-              <Facebook/>
-              </div>
-              <div className="social">
-              <Twitter/>
-              </div>
-              <div className="social">
-               <Instagram/>
-              </div>
+              <div className="social-container">
+                <div className="social">
+                  <Facebook />
+                </div>
+                <div className="social">
+                  <Twitter />
+                </div>
+                <div className="social">
+                  <Instagram />
+                </div>
               </div>
             </div>
           </div>
