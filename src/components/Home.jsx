@@ -1,5 +1,6 @@
 import React from 'react'
-import '../styles/home.css'; // Adjust the path as needed
+//import '../styles/home.css'; // Adjust the path as needed
+import'../styles/Home2.css';
 
 import img1 from '../assets/construction.jpg'
 import img2 from '../assets/img2.jpeg'
@@ -53,33 +54,42 @@ export const Home = () => {
     </div>
 
 
-    <div>
+    <div className='info'>
+    
         <h1 className='mission'>Mission Statement</h1>
-        <div className='info'>
+        <div className='info1'>
             <section className='one-left'>
-            <img className='one' src={one} alt="" />
-            <p>Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum fugit modi nesciunt quasi culpa, commodi soluta dolore Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. voluptatum dicta. amet, consectetur adipiscing elit. Sed efficitur, lectus et facilisis placerat.</p>
+            {/* <img className='one' src={one} alt="" /> */}
+            <h1 className='one'>1</h1>
+            <p className='onep'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur, lectus et facilisis placerat.</p>
             </section>
             <section className='two-right'>
-            <img className='two' src={two} alt="" />
-            <p>Lorem ipsum dolor Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates earum placeat mollitia quisquam, sunt deleniti provident soluta cum officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, iusto? sit amet, consectetur adipiscing elit. Sed efficitur, lectus et facilisis placerat,.</p>
+            {/* <img className='two' src={two} alt="" /> */}
+            <h1 className='one'>2</h1>
+            <p className='twop'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur, lectus et facilisis placerat, magna mauris porttitor tortor.</p>
             </section>
         </div>
     </div>
 
     <div className='our-project'>
-        <h1>Our Projects</h1>
-        <section className='project'>
+    <h1 className='p'>Our Projects</h1>
+    <section className='project'>
+        <div class="image-container">
             <img className='img5' src={img5} alt="" />
-            <div className="image-text">
-                <h1>Project <br /> Genesis
-                <button>view more &rarr; </button>
-                </h1>
+            <div class="image-text">
+                <h1>Project Genesis</h1>
+                <button>view more &rarr;</button>
             </div>
-            {/* <button className='img-tn'>read more &nbsp;  &rarr; </button> */}
+        </div>
+        <div class="image-container">
             <img className='img6' src={img6} alt="" />
-        </section>
-    </div>
+        </div>
+    </section>
+</div>
+
+
+
+
 
     </>
     

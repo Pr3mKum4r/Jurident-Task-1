@@ -120,6 +120,7 @@ line-height: 64px; /* 100% */
   .text-container {
     flex: 1;
     padding: 20px;
+   
   }
   
   .image-container {
@@ -199,8 +200,13 @@ background: #F3F3F3;
 
   .info{
     display: flex;
+    flex-direction: column;
 
-
+    .info1{
+      display: flex;
+      flex-direction: row;
+      position: relative;
+    }
     .one-left{
         width: 50%;
         display: flex;
@@ -218,8 +224,8 @@ flex-shrink: 0;
         flex-direction: row;
         width: 50%;
         height: 144.179px;
-
     }
+
 
     .one{
         display: flex;
@@ -237,12 +243,36 @@ flex-direction: column;
 justify-content: center;
 flex-shrink: 0;
     }
+    .onep{
+      width: 316px;
+      padding-top: 8%;
+height: 148.299px;
+flex-shrink: 0;
+color: var(--Gray-1, #333);
+font-family: Poppins;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 36px; /* 163.636% */
+    }
+    .twop{
+      width: 420px;
+height: 148.299px;
+flex-shrink: 0;
+color: var(--Gray-1, #333);
+font-family: Poppins;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 36px; /* 163.636% */
+
+    }
   }
   /* .our-project{
     padding-left: 10%;
   } */
 
-
+  
   .project{
     padding-left: 10%;
     display: flex;
