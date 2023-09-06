@@ -1,6 +1,7 @@
 import React from 'react'
 //import '../styles/home.css'; // Adjust the path as needed
-import'../styles/Home2.css';
+// import'../styles/Home2.css';
+import'../styles/home3.css';
 
 import img1 from '../assets/construction.jpg'
 import img2 from '../assets/img2.jpeg'
@@ -16,21 +17,22 @@ export const Home = () => {
   return (
     <>
     <div id="home">
-        <section>
-            <div>
-                <h1 >ABCD</h1>
-                <h1 className='h1'>COMPANY</h1>
-            </div>
-            <div>
-                <button className='btn1'>&larr;</button>
-                <button className='btn2'>&rarr;</button>
-            </div>
-        </section>
-        <section className='construction-img'>
+    <section class="text-section">
+        <div>
+            <h1>ABCD</h1>
+            <h1 class="h1">COMPANY</h1>
+        </div>
+        <div>
+            <button class="btn1">&larr;</button>
+            <button class="btn2">&rarr;</button>
+        </div>
+    </section>
+    <section class="construction-img">
         <img src={img1} alt="rghnsrgh" />
-        <button className='img-btn'>read more &nbsp;  &rarr; </button>
-        </section>
-    </div>
+        <button class="img-btn">read more &nbsp; &rarr;</button>
+    </section>
+</div>
+
 
 
     <div className="image-layout">
@@ -47,45 +49,50 @@ export const Home = () => {
       <div className="text-container">
         <h2>About</h2>
         <p>Write your message.  .Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-        <h4>read more</h4>
-        <button className='read'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &rarr;</button>
+        {/* <h4>Read more</h4> */}
+        {/* <button className='read'>   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &rarr;</button> */}
+        <button className='read'>read more &nbsp;  &rarr; </button>
       </div>
       
     </div>
 
 
-    <div className='info'>
-    
-        <h1 className='mission'>Mission Statement</h1>
-        <div className='info1'>
-            <section className='one-left'>
-            {/* <img className='one' src={one} alt="" /> */}
-            <h1 className='one'>1</h1>
-            <p className='onep'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur, lectus et facilisis placerat.</p>
-            </section>
-            <section className='two-right'>
-            {/* <img className='two' src={two} alt="" /> */}
-            <h1 className='one'>2</h1>
-            <p className='twop'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur, lectus et facilisis placerat, magna mauris porttitor tortor.</p>
-            </section>
-        </div>
+    <div class='info'>
+    <h1 class='mission'>Mission Statement</h1>
+    <div class='info-content'>
+        <section class='info-item'>
+            <h2>1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur, lectus et facilisis placerat.</p>
+        </section>
+        <section class='info-item info-itemx'>
+            <h2>2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur, lectus et facilisis placerat, magna mauris porttitor tortor.</p>
+        </section>
     </div>
+</div>
 
-    <div className='our-project'>
-    <h1 className='p'>Our Projects</h1>
-    <section className='project'>
-        <div class="image-container">
-            <img className='img5' src={img5} alt="" />
-            <div class="image-text">
-                <h1>Project Genesis</h1>
-                <button>view more &rarr;</button>
+
+<div class='our-project'>
+    <h1 class='project-heading'>Our Projects</h1>
+    <section class='project-container'>
+        <div class="project-item">
+            <div class="image-container">
+                <img class='project-image' src={img5} alt="Project Genesis" />
+                <div class="project-overlay">
+                    <h2>Project <br /> Genesis</h2>
+                    <button>View More &rarr;</button>
+                </div>
             </div>
         </div>
-        <div class="image-container">
-            <img className='img6' src={img6} alt="" />
+        <div class="project-item">
+            <div class="image-container">
+                <img class='project-image' src={img6} alt="" />
+            </div>
         </div>
     </section>
 </div>
+
+
 
 
 
