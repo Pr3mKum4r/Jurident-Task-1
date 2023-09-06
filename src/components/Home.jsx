@@ -1,7 +1,5 @@
 import React from 'react'
-//import '../styles/home.css'; // Adjust the path as needed
-// import'../styles/Home2.css';
-import'../styles/home3.css';
+import'../styles/home.css';
 
 import img1 from '../assets/construction.jpg'
 import img2 from '../assets/img2.jpeg'
@@ -18,7 +16,7 @@ export const Home = () => {
     <>
     <div id="home">
     <section class="text-section">
-        <div>
+        <div className='heading'>
             <h1>ABCD</h1>
             <h1 class="h1">COMPANY</h1>
         </div>
@@ -32,7 +30,6 @@ export const Home = () => {
         <button class="img-btn">read more &nbsp; &rarr;</button>
     </section>
 </div>
-
 
 
     <div className="image-layout">
@@ -49,9 +46,8 @@ export const Home = () => {
       <div className="text-container">
         <h2>About</h2>
         <p>Write your message.  .Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-        {/* <h4>Read more</h4> */}
-        {/* <button className='read'>   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &rarr;</button> */}
-        <button className='read'>read more &nbsp;  &rarr; </button>
+       
+        <button className='read'>read more &rarr; </button>
       </div>
       
     </div>
@@ -91,12 +87,6 @@ export const Home = () => {
         </div>
     </section>
 </div>
-
-
-
-
-
-
 
     </>
     
